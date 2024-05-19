@@ -154,3 +154,20 @@ body {
     margin: 0 auto;
     padding: 0 20px;
   }
+  .suggestions {
+    position: absolute;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 1000;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background: #f0f0f0;
+}
