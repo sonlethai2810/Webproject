@@ -63,12 +63,6 @@
             color: #fff;
             margin-top: 10px;
         }
-        .left{
-            display: flex;
-        }
-        .right{
-            display: flex;
-        }
         .divheader{           
             align-items: center;
             justify-content:center;
@@ -80,17 +74,12 @@
             font-weight: bold;
             color: #007bff;              
         }
+        .left{
+            display: flex;
+        }
         label a {
             color: #fff;
             text-decoration: none;
-        }
-        .text1{
-            background: none;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            outline: none;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -101,27 +90,31 @@
                 <div>
                     <a href="main.html" class="logo">Vincent</a>
                 </div>
-                <p><b><big>Đăng nhập vào Vincent</big></b></p>
+                <p><b><big>Đăng ký vào Vincent</big></b></p>
             </header>
             <div class="input-field">
-                <input type="text" class="input" placeholder="Tên Đăng nhập" required>
+                <input type="text" class="input" placeholder="Tên đăng ký" required>
             </div>
             <div class="input-field">
-                <input type="password" class="input" placeholder="Mật Khẩu" required>
+                <input type="email" class="input" placeholder="Nhập email của bạn" required>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Nhập Mật Khẩu" required>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Xác nhận lại mật khẩu" required>
             </div>
             <div class="input-field">
                 <input type="submit" class="submit" value="Xác nhận">
             </div>
             <div class="bottom">
                 <div class="left">
-                    <label><a href="#">Quên mật khẩu?</a></label>
-                </div>
-                <div class="right">
-                    <button class="text1" onclick="window.location.href='dangky.html'">Chưa có tài khoản?Đăng ký ngay</button>
+                    <input type="checkbox">
+                    <label for="checkbox">Đồng ý đăng ký</label>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
-    
+
 </body>
 </html>
