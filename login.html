@@ -60,7 +60,7 @@
             flex-direction: row;
             justify-content: space-between;
             font-size: small;
-            color: #fff;
+            color: lightcyan;
             margin-top: 10px;
         }
         .left{
@@ -91,6 +91,23 @@
             border: none;
             outline: none;
             cursor: pointer;
+            font-size: small;
+        }
+        .bonus{
+            display: flex;
+            background: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .bonus1{
+            display: flex;
+            justify-content: space-around;
+        }
+        .github{
+            width: 60px;
+            height: 30px;
         }
     </style>
 </head>
@@ -114,13 +131,24 @@
             </div>
             <div class="bottom">
                 <div class="left">
-                    <label><a href="#">Quên mật khẩu?</a></label>
+                    <label><a href="#"><u>Quên mật khẩu?</u></a></label>
                 </div>
                 <div class="right">
-                    <button class="text1" onclick="window.location.href='dangky.html'">Chưa có tài khoản?Đăng ký ngay</button>
+                    <button class="text1" onclick="window.location.href='dangky.html'"><u>Chưa có tài khoản?Đăng ký ngay</u></button>
                 </div>
             </div>
+            <div class="bonus1">
+                <button class="bonus">
+                    <img src="imgage/github.png" class="github">
+                </button>
+                <button class="bonus">
+                    <img src="imgage/google.jpg" class="github">
+                </button>
+                <button class="bonus">
+                    <img src="imgage/facebook.jpg" class="github">
+                </button>
             </div>
+        </div>
     </div>
     
 </body>
