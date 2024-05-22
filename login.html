@@ -1,155 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Đăng nhập</title>
-    <style>
-        *{
-            font-family: 'Poppins', sans-serif;
-        }
-        body{
-            background-image: url("imgage/image.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 90vh;
-        }
-        .container{
-            width: 350px;
-            display: flex;
-            flex-direction: column;
-            padding: 0 15px 0 15px;
-        }
-        .input-field .input{
-            margin-bottom: 15px;
-            height: 45px;
-            width: 87%;
-            border: none;
-            outline: none;
-            border-radius: 30px;
-            color: #fff;
-            padding: 0 0 0 42px;
-            background: rgba(255, 255, 255, 0.1);
-        }
-        ::-webkit-input-placeholder{
-            color: #fff;
-        }
-        .submit{
-            border: none;
-            border-radius: 30px;
-            font-size: 15px;
-            height: 45px;
-            outline: none;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.7);
-            cursor: pointer;
-            transition: .3s;
-        }
-        .submit:hover{
-            box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0,2);
-        }
-        .bottom{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            font-size: small;
-            color: lightcyan;
-            margin-top: 10px;
-        }
-        .left{
-            display: flex;
-        }
-        .right{
-            display: flex;
-        }
-        .divheader{           
-            align-items: center;
-            justify-content:center;
-            text-align: center;
-        }
-        .logo {
-            display: inline-block;
-            font-size: 24px;
-            font-weight: bold;
-            color: #007bff;              
-        }
-        label a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .text1{
-            background: none;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            font-size: small;
-        }
-        .bonus{
-            display: flex;
-            background: white;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .bonus1{
-            display: flex;
-            justify-content: space-around;
-        }
-        .github{
-            width: 60px;
-            height: 30px;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="SignInStyle.css">
+  </head>
+  <body>
     <div class="box">
-        <div class="container">
-            <header class="divheader">
-                <div>
-                    <a href="main.html" class="logo">Vincent</a>
-                </div>
-                <p><b><big>Đăng nhập vào Vincent</big></b></p>
-            </header>
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Tên Đăng nhập" required>
+      <div class="container">
+        <header class="divheader">
+          <div>
+            <a href="main.html" class="logo">Vincent</a>
+          </div>
+          <p>
+            <b><big>Đăng nhập vào Vincent</big></b>
+          </p>
+        </header>
+        <form class="form">
+            <input
+                type="text"
+                class="input"
+                placeholder="Tên Đăng nhập"
+                required
+            />
+            <input
+                type="password"
+                class="input"
+                placeholder="Mật Khẩu"
+                required
+            />
+            
+            <div class="page-link">
+                <a href="#"><u class="left">Quên mật khẩu?</u></a>
             </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Mật Khẩu" required>
+            <div >
+                <button class="form-btn">Đăng nhập</button>
+
             </div>
-            <div class="input-field">
-                <input type="submit" class="submit" value="Xác nhận">
-            </div>
-            <div class="bottom">
-                <div class="left">
-                    <label><a href="#"><u>Quên mật khẩu?</u></a></label>
-                </div>
-                <div class="right">
-                    <button class="text1" onclick="window.location.href='dangky.html'"><u>Chưa có tài khoản?Đăng ký ngay</u></button>
-                </div>
-            </div>
-            <div class="bonus1">
-                <button class="bonus">
-                    <img src="imgage/github.png" class="github">
-                </button>
-                <button class="bonus">
-                    <img src="imgage/google.jpg" class="github">
-                </button>
-                <button class="bonus">
-                    <img src="imgage/facebook.jpg" class="github">
-                </button>
-            </div>
+        </form>
+        <div class="bottom">
+          
+          <div class="right">
+            <p class="sign-up-label">
+                Chưa có tài khoản?<a href="dangky.html"><u class="sign-up-link">Đăng ký ngay.</u></a>
+            </p>
+          </div>
         </div>
+        <div class="bonus1">
+          <button class="btn">
+            <svg
+              width="40"
+              height="40"
+              fill="#0092E4"
+              xmlns="http://www.w3.org/2000/svg"
+              data-name="Layer 1"
+              viewBox="0 0 24 24"
+              id="github"
+            >
+              <path
+                d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+              ></path>
+            </svg>
+          </button>
+          <button class="btn">
+            <svg
+              width="40"
+              height="40"
+              fill="#0092E4"
+              xmlns="http://www.w3.org/2000/svg"
+              data-name="Layer 1"
+              viewBox="0 0 24 24"
+              id="google"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+        </svg>
+          </button>
+          <button class="btn">
+            <svg
+              id="discord"
+              viewBox="0 0 24 24"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#0092E4"
+              height="40"
+              width="40"
+            >
+              <path
+                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
