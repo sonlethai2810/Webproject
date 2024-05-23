@@ -24,3 +24,8 @@ function showSuggestions(value) {
         suggestionsBox.appendChild(suggestionItem);
     });
 }
+$(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );

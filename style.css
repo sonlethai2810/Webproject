@@ -1,12 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+@import url(https://fonts.googleapis.com/css?family=Holtwood+One+SC);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    background-color: #fff;
   }
   
   header {
-    background-color: #f0f0f0;
-    padding: 20px 0;
+    background-color: white;
+    margin-top: 40px;
+    padding: 5px;
   }
   
   .container {
@@ -142,27 +150,28 @@ body {
   .login-btn{
       background-color: #007bff;
       color: #fff;
-      padding: 8px 12px;
+      padding: 10px;
       border: none;
-      border-radius: 4px;
       cursor: pointer;
       float: right; 
+      margin-left: 0;
+      border-radius: 5px;
   }
   .signup-btn{
     background-color: #007bff;
       color: #fff;
-      padding: 8px 12px;
+      padding: 10px;
       border: none;
-      border-radius: 4px;
       cursor: pointer;
       float: right; 
+      margin-left: 0;
+      border-radius: 5px;
 
   }
   .divheader {
     display: flex;    
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
+    justify-content: space-around;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -182,4 +191,210 @@ body {
 
 .suggestion-item:hover {
   background: #f0f0f0;
+}
+.snip1248 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  color: #bdbdbd;
+  margin: 15px 10px;
+  text-align: center;
+  font-size: 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1248 h1 {
+  margin-bottom:  0;
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 14px;
+}
+.snip1248 h1 {
+  font-family: 'Holtwood One SC', Arial, sans-serif;
+  position: relative;
+  background-color: #bdbdbd;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+.snip1248 h1 span {
+  position: relative;
+  z-index: 1;
+}
+.snip1248 h1::before,
+.snip1248 h1::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: inherit;
+  transform: skewX(-15deg);
+  z-index: 0;
+}
+.snip1248 h1::after {
+  transform: skewX(15deg);
+}
+.snip1248 i {
+  position: relative;
+  font-size: 6em;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  background-color: #bdbdbd;
+  color: #212121;
+}
+.snip1248 i:before {
+  background-color: #bdbdbd;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+}
+.snip1490 {
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #eee;
+  display: flex;
+  padding: 0;
+  letter-spacing: 2px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+  border: none;
+  justify-content: space-around;
+}
+
+.snip1490 *,
+.snip1490 *:before {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.snip1490 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+.snip1490 > li {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #b3b3b3;
+}
+
+.snip1490 > li:first-of-type {
+  border-left: none;
+}
+
+.snip1490 > li:last-of-type {
+  border-right: none;
+}
+
+.snip1490 a {
+  color: #000000;
+  display: block;
+  padding: 1.1em 2em 1.3em;
+  position: relative;
+  text-decoration: none;
+}
+
+.snip1490 a:hover {
+  color: #ffffff;
+}
+
+.snip1490 > li:before,
+.snip1490 > li:after {
+  position: absolute;
+  content: '';
+}
+
+.snip1490 > li:before {
+  background-color: #962d22;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.snip1490 > li:after {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  height: 5px;
+  background-color: #6d2018;
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.snip1490 ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 5px 0;
+  white-space: nowrap;
+  font-size: 0.8em;
+  background-color: #8e2a20;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.snip1490 ul li {
+  display: list-item;
+  float: none;
+  position: relative;
+}
+
+.snip1490 ul li a {
+  padding: 0.8em 1.2em;
+  color: #ffffff;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+.snip1490 ul li a:hover {
+  opacity: 1;
+}
+
+.snip1490 li:hover > ul {
+  display: inherit;
+}
+
+.snip1490 li > a:after {
+  content: ' \f3d0';
+  font-family: "Ionicons";
+}
+
+.snip1490 li > a:only-child:after {
+  content: '';
+}
+
+.snip1490 ul ul {
+  background-color: #962d22;
+  top: 0px;
+  left: 100%;
+  list-style: none;
+  font-size: 1em;
+}
+
+.snip1490 ul li > a:after {
+  content: ' \f3d1';
+}
+
+.snip1490 > li:hover > a,
+.snip1490 > li.current > a {
+  color: #fff;
+}
+
+.snip1490 > li:hover:before,
+.snip1490 > li.current:before {
+  bottom: 0;
+  opacity: 1;
 }
