@@ -15,11 +15,12 @@ body {
   header {
     background-color: rgba(215, 201, 201, 0.747);
     padding: 5px;
+    margin-bottom: 0;
   }
   
   .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 0;
     padding: 0 20px; 
   }
   .container1{
@@ -184,14 +185,13 @@ body {
     border-top: none;
     z-index: 1000;
     background: #fff;
-    width: 100%;
     box-sizing: border-box;
     border-radius: 5px;
     border-bottom: none;
     margin-bottom: none;
 }
 .suggestion-item {
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -281,6 +281,7 @@ body {
   list-style: outside none none;
   margin: 0;
   position: relative;
+  font-size: 12px;
   float: left;
 }
 
