@@ -17,6 +17,11 @@ main{
   background-color: rgb(33, 31, 31);
   
 }
+footer{
+  color: black;
+  font-family: sans-serif;
+  background-color: blue;
+}
   
   header {
     background-color: rgba(215, 201, 201, 0.747);
@@ -420,17 +425,16 @@ main{
 }
 figure.snip1208 {
   font-family: 'Raleway', Arial, sans-serif;
-  color: #fff;
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 220px;
-  max-width: 310px;
+  margin: 15px;
+  min-width: 200px;
+  max-width: 400px;
   width: 100%;
   background-color: #ffffff;
   color: #000000;
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
 }
 figure.snip1208 * {
   -webkit-box-sizing: border-box;
