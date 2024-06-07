@@ -27,13 +27,11 @@ function showSuggestions(value) {
         suggestionsBox.style.display = 'none';
     }
 }
-<<<<<<< HEAD
 $(".hover").mouseleave(
     function() {
       $(this).removeClass("hover");
     }
   );
-=======
 
 document.addEventListener('click', (event) => {
     const suggestionsBox = document.getElementById('suggestions-box');
@@ -41,4 +39,6 @@ document.addEventListener('click', (event) => {
         suggestionsBox.style.display = 'none';
     }
 });
->>>>>>> 0ed090559729da83faf267be8e5a008eb87d5edd
+
+
+
