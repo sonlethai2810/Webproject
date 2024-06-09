@@ -656,5 +656,24 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 20%;
+  text-align: center;
 }
 
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  
+}
+
+.avatar {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 2px solid #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
