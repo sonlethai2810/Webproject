@@ -534,16 +534,6 @@ figure.snip1208:hover button,
 figure.snip1208.hover button {
   background-color: #117964;
 }
-<<<<<<< HEAD
-.bottompost{
-  display: flex;
-  font-family: sans-serif;
-  font-size: 15px;
-  padding: 10px;
-  margin: 10px;
-  color: white;
-  text-align: center;
-=======
 @media (max-width: 768px) {
   .footer-container {
       flex-direction: column;
@@ -618,6 +608,33 @@ body {
   color: white;
   padding: 10px 20px;
   cursor: pointer;
->>>>>>> afe988e1387961abc4dc1bce069610b9a447eab0
+}
+.bottom{
+display: flex;
+margin-left: 100px;
+margin-top: 15px;
+}
+#video-description {
+  font-style: italic;
+  font-size: 20px;
+  color: #fff;
+}
+.separatorvideo{
+  border-right: 1px solid #ccc;
+  height: 550;
+  width: 1px;
+  margin-left: 20px;
+}
+.video{
+  margin-left: 20px;
+}
+.separatorvideobottom{
+  border-bottom: 1px solid #ccc;
+  height: 1;
+  width: 775px;
+  margin-top: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
