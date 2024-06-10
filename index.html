@@ -33,6 +33,29 @@
                 <button type="submit">Tìm kiếm</button>
             </div>
             <div class="separator1"></div>
+            <a href="#" class="login-btn" id="thanhvien" style="text-decoration: none">Thành Viên Nhóm</a>
+                <div class ="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <div class ="information"> 
+                            <div class="avatar-container">  
+                            <img src="component/imgage/Damviethung.jpg" alt="Dam Viet Hung" class="avatar">
+                            </div>  
+                            <p>Họ và tên: Đàm Việt Hưng</p>
+                            <p>Mã sinh viên: 22014569</p>
+                        </div>
+                        <div class="information">
+                            <div class="avatar-container">
+                            <img src="" alt="Le Thai Son" class="avatar">
+                            </div>
+                            <p>Họ và tên: Lê Thái Sơn</p>
+                            <p>Mã sinh viên:</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            <div id="overlay" class="overlay"></div>
+            <div class="separator1"></div>
             <div class="container1">
             <button class="login-btn" onclick="window.location.href='component/login.html'">Đăng nhập</button>
             <button class="signup-btn" onclick="window.location.href='component/dangky.html'">Đăng ký</button>
@@ -190,6 +213,10 @@
                     <li><i class="fa fa-github"></i> <a href="https://github.com/sonlethai2810/Webproject"> @WordPress</a> RT @photomatt: Làm việc trong GitHub <br> <span><small> 2 week ago</small></span></li>
                 </ul>
             </div>
+<<<<<<< HEAD
+=======
+           
+>>>>>>> d25c824f395cfae3de990f11645eff3bb54e2d4b
             <div class="footer-section contact">
                 <h4>Contact Details</h4>
                 <ul>
@@ -202,9 +229,21 @@
             </div>
         </div>
     </footer>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            </body>
-            </html>
+          
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+            <script>
+                document.getElementById("thanhvien").addEventListener("click", function(){
+                    document.querySelector(".popup").style.display = "flex"; 
+                });
+            
+                document.querySelector(".close").addEventListener("click", function(){
+                    document.querySelector(".popup").style.display = "none"; 
+                });
+            </script>
+            
+    </body>
+</html>
                     
                
 
